@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Panda Clicker</title>
+</head>
+<body>
+  <section class="friends">
+    <div class="container">
+      <h1 class="friends__title">Пригласите друзей!</h1>
+      <p class="friends__text">Вы получите бонусы за каждого друга</p>
+      <button class="friends__btn">
+        <img src="./img/gift.png" alt="gift" class="friends__img">
+        <span class="friends__btn-info">
+          <span class="friends__btn-text">Пригласить друга</span>
+          <div class="friends__btn-span">
+            <img src="./img/balance-coin.png" alt="" class="friends__btn-icon">
+            +2000 
+          </div>
+        </span>
+      </button>
+      <div class="friends__main">
+        <h2 class="friends__subtitle">Список ваших друзей (2)</h2>
+        <ul class="friends__list">
+          <li class="friends__item">
+            <div class="friends__info">
+              <div class="friends__avatar">
+                <img src="./img/avatar-example.jpg" alt="" class="friends__avatar-img">
+              </div>
+              <p class="friends__username">Dimsnac</p>
+            </div>
+            <div class="friends__bonus">
+              <img src="./img/balance-coin.png" alt="" class="friends__bonus-icon">
+              <p class="friends__bonus-value">+2000</p>
+            </div>
+          </li>
+          <li class="friends__item">
+            <div class="friends__info">
+              <div class="friends__avatar">
+                <img src="./img/avatar-example.jpg" alt="" class="friends__avatar-img">
+              </div>
+              <p class="friends__username">Dimsnac</p>
+            </div>
+            <div class="friends__bonus">
+              <img src="./img/balance-coin.png" alt="" class="friends__bonus-icon">
+              <p class="friends__bonus-value">+2000</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <nav class="nav">
+    <div class="container">
+      <div class="invite">
+        <button class="invite__btn">
+          <span class="invite__tooltip">Ссылка скопирована!</span>
+          Пригласить друга
+          <img src="./img/friend.svg" alt="person" class="invite__btn-icon">
+        </button>
+        <button class="invite__copy">
+          <img src="./img/copy.svg" alt="copy" class="invite__copy-icon">
+        </button>
+      </div>
+      <div class="nav__inner">
+        <a href="./index.html" class="nav__btn"><img src="./img/home-green.svg" alt="home" class="nav__btn-icon"></a>
+        <div class="nav__community">
+          <a href="./friends.html" class="nav__link nav__link--active"><img src="./img/friends-light.svg" alt="friends" class="nav__link-icon"></a>
+          <a href="./leaders.html" class="nav__link"><img src="./img/trophy.svg" alt="rating" class="nav__link-icon"></a>
+        </div>
+        <div class="nav__action">
+          <a href="./tasks.html" class="nav__link"><img src="./img/tasks.svg" alt="tasks" class="nav__link-icon"></a>
+          <a href="./shop.html" class="nav__link"><img src="./img/bag.svg" alt="shop" class="nav__link-icon"></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>

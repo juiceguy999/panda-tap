@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="./js/pvp.js"></script>
+  <title>Panda Clicker</title>
+</head>
+<body>
+  <div class="pvp-wrapper">
+    <section class="profile">
+      <div class="container">
+        <div class="profile__inner">
+          <div class="profile__main">
+            <div class="profile__user">
+              <div class="profile__user-avatar">
+                <img src="./img/avatar-example.jpg" alt="" class="profile__user-img">
+              </div>
+              <p class="profile__user-text">Алекс</p>
+            </div>
+            <div class="profile__items">
+              <div class="profile__item">
+                <img src="./img/heart-timer.svg" alt="" class="profile__item-img">
+              </div>
+              <div class="profile__item profile__item--inactive">
+                <img src="./img/pickaxe-plus.svg" alt="" class="profile__item-img profile__item-img--shifted">
+              </div>
+            </div>
+          </div>
+          <div class="profile__timer">
+            <img src="./img/time.svg" alt="" class="profile__timer-icon">
+            <p class="profile__timer-value">1:51</p>
+          </div>
+        </div>
+        <div class="health">
+          <div class="health__top">
+            <div class="health__box">
+              <img src="./img/heart.png" alt="" class="health__img">
+              <p class="health__value">7777/7777</p>
+            </div>
+            <p class="health__percent">100%</p>
+          </div>
+          <div class="health__bar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="353" height="14" viewBox="0 0 353 14" fill="none">
+              <g filter="url(#filter0_d_220_573)">
+              <path d="M7 3H346" stroke="url(#paint0_linear_220_573)" stroke-width="6" stroke-linecap="round"/>
+              </g>
+              <defs>
+              <filter id="filter0_d_220_573" x="0" y="0" width="353" height="14" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="4"/>
+              <feGaussianBlur stdDeviation="2"/>
+              <feComposite in2="hardAlpha" operator="out"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_220_573"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_220_573" result="shape"/>
+              </filter>
+              <linearGradient id="paint0_linear_220_573" x1="617.84" y1="4.58654" x2="617.806" y2="-0.617963" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#0BBE46"/>
+              <stop offset="0.56" stop-color="#337248"/>
+              <stop offset="0.99" stop-color="#79B98E"/>
+              </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tap">
+      <div class="container tap__container">
+        <button id="tap" class="tap__btn">
+          <img src="./img/panda.webp" alt="" class="tap__img">
+          <span class="tap__circle">
+            <span class="tap__shadow">
+              <span class="tap__light">
+              </span>
+            </span>
+          </span>
+        </button>
+        <div id="animatedElement">-1</div>
+      </div>
+    </section>
+
+    <section class="action">
+      <div class="container">
+        <div class="health">
+          <div class="health__top">
+            <div class="health__box">
+              <img src="./img/heart.png" alt="" class="health__img">
+              <p class="health__value">7777/7777</p>
+            </div>
+            <p class="health__percent">100%</p>
+          </div>
+          <div class="health__bar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="353" height="14" viewBox="0 0 353 14" fill="none">
+              <g filter="url(#filter0_d_220_573)">
+              <path d="M7 3H346" stroke="url(#paint0_linear_220_573)" stroke-width="6" stroke-linecap="round"/>
+              </g>
+              <defs>
+              <filter id="filter0_d_220_573" x="0" y="0" width="353" height="14" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="4"/>
+              <feGaussianBlur stdDeviation="2"/>
+              <feComposite in2="hardAlpha" operator="out"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_220_573"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_220_573" result="shape"/>
+              </filter>
+              <linearGradient id="paint0_linear_220_573" x1="617.84" y1="4.58654" x2="617.806" y2="-0.617963" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#0BBE46"/>
+              <stop offset="0.56" stop-color="#337248"/>
+              <stop offset="0.99" stop-color="#79B98E"/>
+              </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="action__inner">
+          <button class="action__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="170" height="61" viewBox="0 0 170 61" fill="none">
+              <g filter="url(#filter0_d_220_552)">
+                <rect x="4" width="100" height="53" rx="26" fill="#0BBE46"/>
+              </g>
+              <g filter="url(#filter1_d_220_552)">
+                <path d="M66 0H140C154.359 0 166 11.6406 166 26V27C166 41.3594 154.359 53 140 53H66V0Z" fill="#BEBFC2"/>
+              </g>
+              <defs>
+                <filter id="filter0_d_220_552" x="0" y="0" width="108" height="61" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dy="4"/>
+                  <feGaussianBlur stdDeviation="2"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_220_552"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_220_552" result="shape"/>
+                </filter>
+                <filter id="filter1_d_220_552" x="62" y="0" width="108" height="61" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dy="4"/>
+                  <feGaussianBlur stdDeviation="2"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_220_552"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_220_552" result="shape"/>
+                </filter>
+              </defs>
+            </svg>
+            <img src="./img/pickaxe-plus.svg" alt="" class="action__btn-img">
+            <span class="action__btn-span">Use</span>
+          </button>
+          <button class="action__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="171" height="61" viewBox="0 0 171 61" fill="none">
+              <g filter="url(#filter0_d_220_553)">
+                <rect x="4" width="101" height="53" rx="26" fill="white"/>
+              </g>
+              <g filter="url(#filter1_d_220_553)">
+                <path d="M66 0H141C155.359 0 167 11.6406 167 26V27C167 41.3594 155.359 53 141 53H66V0Z" fill="#0BBE46"/>
+              </g>
+              <defs>
+                <filter id="filter0_d_220_553" x="0" y="0" width="109" height="61" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dy="4"/>
+                  <feGaussianBlur stdDeviation="2"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_220_553"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_220_553" result="shape"/>
+                </filter>
+                <filter id="filter1_d_220_553" x="62" y="0" width="109" height="61" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dy="4"/>
+                  <feGaussianBlur stdDeviation="2"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_220_553"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_220_553" result="shape"/>
+                </filter>
+              </defs>
+            </svg>
+            <img src="./img/heart-timer.svg" alt="" class="action__btn-img action__btn-img--shifted">
+            <span class="action__btn-span action__btn-span--light">Use</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
